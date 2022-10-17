@@ -3,7 +3,7 @@
     z-index: 99999;
     right: 20px;
 }
-.right-fixed-box .right-fixed-box-firstBtn{
+.right-fixed-box .r-f-box-firstBtn{
     text-align: center;
     border: 1px solid #f34d4d;
     color: #f34d4d;
@@ -16,6 +16,30 @@
     font-size: 16px;
     color: #f34d4d;
 }
-.right-fixed-box .right-fixed-box-firstBtn:hover {
+.right-fixed-box .r-f-box-firstBtn:hover {
     opacity: .7;
 }
+.right-fixed-firstdialog{ width: 100%;height: 100vh; position: fixed; z-index: 9999999;background: rgba(76, 53, 53, 0.1);display: flex;align-items: center;justify-content: center }
+.right-fixed-firstdialog .r-f-dialog-body{ width: 500px; height: 400px;background: white;border-radius: 5px;padding: 10px;display: flex;align-items: center;justify-content: space-between;flex-direction: column}
+.right-fixed-firstdialog .r-f-dialog-body >div{ width: 100% }
+.right-fixed-firstdialog .r-f-dialog-title{ display: flex;align-items: center;justify-content: space-between;height: 40px }
+.right-fixed-firstdialog .r-f-dialog-title >div:nth-child(1){ padding: 0 10px;font-size: 16px;font-weight: bold  }
+.right-fixed-firstdialog .r-f-dialog-title >i{ font-size: 16px;padding: 0 10px;cursor: pointer}
+.right-fixed-firstdialog .r-f-dialog-title >i :hover{ color: #f34d4d}
+.right-fixed-firstdialog .r-f-dialog-content{ flex: 1 }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form{ padding: 20px; }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div{ display: flex; padding: 10px 0; }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div>div:nth-child(1){ width: 90px;color: #717070
+}
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div>div:nth-child(2){ flex: 1 }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div>div:nth-child(2) input[type="text" i] { padding: 3px 10px; width: 100%;;max-width: 360px;font-size: 14px; color: #333333;font-family: "Microsoft YaHei UI" }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div>div:nth-child(2) textarea { padding: 5px;width: 100%;max-width: 380px;font-size: 14px; color: #333333;font-family: "Microsoft YaHei UI" }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .r-f-checkbox-box {display: flex;flex-wrap: wrap;}
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .r-f-checkbox-box >div {display: flex;align-items: center;justify-content: center;margin-right: 10px; margin-bottom: 8px}
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .r-f-checkbox-box >div input[type="checkbox" i]  { width: 16px;height: 16px;margin-right: 5px;cursor: pointer}
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .r-f-checkbox-box >div label { font-size: 14px;height: 18px;line-height: 18px;cursor: pointer }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .r-f-checkbox-box >div input[type=checkbox]:checked  { border-color: #f34d4d;color: #f34d4d;background-color: #f34d4d }
+
+.right-fixed-firstdialog .r-f-dialog-footer{ display: flex;align-items: center;justify-content: center;height: 50px  }
+.right-fixed-firstdialog .r-f-dialog-footer .submit{ padding: 5px 10px;background: #f34d4d;color: white;border-radius: 5px;cursor: pointer; }
+.right-fixed-firstdialog .r-f-dialog-footer .submit :hover{ opacity: .8 }
