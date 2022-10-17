@@ -16,6 +16,9 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         })
         $(document).on("click", ".right-fixed-box-firstBtn", function () {
             console.log(123)
+            console.log('文档反馈')
+            var $dialogBox = $('<div />').appendTo('body');
+            $dialogBox.html('弹出窗')
         });
     });
 });
