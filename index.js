@@ -6,7 +6,8 @@ module.exports = {
             'base.js'
         ],
         css: [
-            'style.css'
+            'style.css',
+            'iconfont.css'
         ]
     },
     // Map of hooks 一些钩子函数

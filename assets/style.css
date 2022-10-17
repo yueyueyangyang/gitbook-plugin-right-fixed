@@ -1,0 +1,21 @@
+.right-fixed-box{
+    position: fixed;
+    z-index: 99999;
+    right: 20px;
+}
+.right-fixed-box .right-fixed-box-firstBtn{
+    text-align: center;
+    border: 1px solid #f34d4d;
+    color: #f34d4d;
+    width: 16px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.right-fixed-box .iconfont{
+    font-size: 16px;
+    color: #f34d4d;
+}
+.right-fixed-box .right-fixed-box-firstBtn:hover {
+    opacity: .7;
+}
