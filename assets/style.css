@@ -1,16 +1,18 @@
 .right-fixed-box{
     position: fixed;
-    z-index: 99999;
+    z-index: 9999;
     right: 20px;
 }
 .right-fixed-box .r-f-box-firstBtn{
     text-align: center;
     border: 1px solid #f34d4d;
     color: #f34d4d;
-    width: 16px;
+    width: 36px;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    margin-bottom: 10px;
+    line-height: 20px;
 }
 .right-fixed-box .iconfont{
     font-size: 16px;
@@ -20,7 +22,7 @@
     opacity: .7;
 }
 .right-fixed-firstdialog{ width: 100%;height: 100vh; position: fixed; z-index: 9999999;background: rgba(76, 53, 53, 0.1);display: flex;align-items: center;justify-content: center }
-.right-fixed-firstdialog .r-f-dialog-body{ width: 500px; height: 400px;background: white;border-radius: 5px;padding: 10px;display: flex;align-items: center;justify-content: space-between;flex-direction: column}
+.right-fixed-firstdialog .r-f-dialog-body{ width: 500px;background: white;border-radius: 5px;padding: 10px 10px 20px 10px;display: flex;align-items: center;justify-content: space-between;flex-direction: column}
 .right-fixed-firstdialog .r-f-dialog-body >div{ width: 100% }
 .right-fixed-firstdialog .r-f-dialog-title{ display: flex;align-items: center;justify-content: space-between;height: 40px }
 .right-fixed-firstdialog .r-f-dialog-title >div:nth-child(1){ padding: 0 10px;font-size: 16px;font-weight: bold  }
@@ -40,6 +42,55 @@
 .right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .r-f-checkbox-box >div label { font-size: 14px;height: 18px;line-height: 18px;cursor: pointer }
 .right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .r-f-checkbox-box >div input[type=checkbox]:checked  { border-color: #f34d4d;color: #f34d4d;background-color: #f34d4d }
 
-.right-fixed-firstdialog .r-f-dialog-footer{ display: flex;align-items: center;justify-content: center;height: 50px  }
-.right-fixed-firstdialog .r-f-dialog-footer .submit{ padding: 5px 10px;background: #f34d4d;color: white;border-radius: 5px;cursor: pointer; }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .file_btn { display: flex; align-items: center; margin-bottom: 5px}
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .file_btn >div{ background-color: rgba(243,77,77,.9);border-radius: 3px; min-width: 74px;text-align: center;color: white;cursor: pointer; padding: 2px 5px 3px 5px; }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .file_btn >div:hover{ opacity: .8 }
+.right-fixed-firstdialog .r-f-dialog-content .r-f-dialog-form>div .file_btn span{ font-size: 10px;color: #666666;margin-left: 10px }
+
+.right-fixed-firstdialog .r-f-dialog-footer{ display: flex;align-items: center;justify-content: center }
+.right-fixed-firstdialog .r-f-dialog-footer .submit{ padding: 8px 20px;background: #f34d4d;color: white;border-radius: 5px;cursor: pointer; }
 .right-fixed-firstdialog .r-f-dialog-footer .submit :hover{ opacity: .8 }
+
+.right-fixed-message{
+    position: fixed;
+    z-index: 999999;
+    min-height: 20px;
+    top: 10vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.right-fixed-message >div{
+    padding: 10px 20px;
+    background-color: #666666;
+    opacity: .5;
+    color: white;
+}
+@keyframes danchu {
+    0%   {opacity: 1}
+    25%  {opacity: 1}
+    50%  {opacity: 1}
+    80%  {opacity: .8}
+    85%  {opacity: .6}
+    90%  {opacity: .4}
+    95%  {opacity: .2}
+    100% {opacity: 0}
+}
+
+.danchu{
+    animation: danchu 5s;
+    -moz-animation: danchu 5s; /* Firefox */
+    -webkit-animation: danchu 5s;  /* Safari 和 Chrome */
+    -o-animation: danchu 5s;   /* Opera */
+}
+
+/*// 预览按钮*/
+.r-f-preview{
+    display: none;
+    color: #6363ff;
+    opacity: .8;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.r-f-preview:hover{
+    opacity: 1;
+}
